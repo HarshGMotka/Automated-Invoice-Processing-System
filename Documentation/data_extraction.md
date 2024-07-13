@@ -3,7 +3,7 @@
 A command line tool and Python library to support Data Extraction process.
 
 1. extracts text from PDF files using different techniques, like
-   `pdftotext` or OCR -- `tesseract`
+   `pdftotext` or OCR `tesseract`
 2. searches for regex in the result using a YAML or JSON-based template system
 3. save results as JSON format
 
@@ -61,7 +61,7 @@ apt-get install tesseract-ocr-chi-sim  # Example: Install Chinese Simplified lan
 Choose any of the following:
 
 ```bash
-# 'pdftotext'
+# pdftotext
 invoice2data --input-reader pdftotext --output-format json --output-name invoice.json invoice.pdf
 
 # tesseract
