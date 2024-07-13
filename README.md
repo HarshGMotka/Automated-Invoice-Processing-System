@@ -12,7 +12,7 @@ Developing an Automated Invoice Processing System involves several key component
 # Architecture Overview
 
 1.	**Input**: Scanned invoices (images or PDFs).
-2.	**Preprocessing**: Enhance image quality for better OCR results.
+2.	**[Preprocessing](Documentation/preprocessing.md)**: Enhance image quality for better OCR results.
 3.	**OCR**: Convert images to machine-readable text.
 4.	**Data Extraction**: Extract relevant fields from the text.
 5.	**Classification and Categorization**: Sort invoices by vendor.
