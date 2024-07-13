@@ -14,7 +14,9 @@ pip install opencv-python pillow numpy
 3. **Denoising**: The fastNlMeansDenoising function is used to reduce noise in the image.
 4. **Binarization**: The image is binarized using Otsu's thresholding method to separate the text from the background.
 5. **Contrast Adjustment**: The contrast of the image is increased using the **ImageEnhance.Contrast**. Contrast function from the PIL library.
-6. **Brightness Adjustment**: The Brightness Adjustment is used to adjust the brightness of the image using **ImageEnhance.Brightness**.
+6. **Brightness Adjustment**: 
+    - The Brightness Adjustment is used to adjust the brightness of the image using **ImageEnhance.Brightness**.
+    - The enhance method is called with a factor of 1.5, which increases the brightness by 50%. You can adjust this value according to your needs.
 7. **Saving the Enhanced Image**: The final enhanced image is saved to the specified output path.
 
 This preprocessing should significantly improve the OCR results.
