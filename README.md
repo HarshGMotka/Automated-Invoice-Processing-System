@@ -13,8 +13,8 @@ Developing an Automated Invoice Processing System involves several key component
 
 1.	**Input**: Scanned invoices (images or PDFs).
 2.	**[Preprocessing](Documentation/preprocessing.md)**: Enhance image quality for better OCR results.
-3.	**OCR**: Convert images to machine-readable text.
-4.	**Data Extraction**: Extract relevant fields from the text.
+3.	**OCR**: Convert images/pdf to machine-readable text.
+4.	**[Data Extraction](Documentation/data_extraction.md)**: Extract relevant fields from the text.
 5.	**Classification and Categorization**: Sort invoices by vendor.
 6.	**Storage**: Save extracted data in a structured format (database).
 7.	**Output**: Provide an interface to view and manage invoices (optional).
@@ -35,13 +35,14 @@ Developing an Automated Invoice Processing System involves several key component
 - Adjust contrast and brightness.
 
 ## 2. Optical Character Recognition (OCR)
-**Purpose**: Convert the preprocessed image into text. 
+**Purpose**: Convert the preprocessed image/pdf into text. 
 
 **Tools and Techniques**:
 - **Tesseract OCR**: Open-source OCR engine.
+- **pdftotext**: Simple PDF text extraction
 
 **Implementation**:
-- Use Tesseract to read text from the preprocessed image.
+- Use pdftotext or Tesseract to read text from the preprocessed image.
 
 ## 3. Data Extraction
 **Purpose**: Extract specific fields such as invoice number, date, total amount, and vendor name from the text. Tools and 
