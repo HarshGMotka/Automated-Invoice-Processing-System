@@ -27,15 +27,23 @@ Get data from invoice PDF files to JSON format as shown below:
 
 ## Installation
 
-1.  Install pdftotext
+1.  Install `poppler` using below command
 
-    Refer [link](https://pypi.org/project/pdftotext/) to install `pdftotext`
+    ```bash
+    sudo apt-get update
+    sudo apt-get install poppler-utils
+    ```
 
     Get the latest [xpdf/poppler-utils](https://poppler.freedesktop.org/) version.
     It's included with different OS such as macOS Homebrew, Debian and Ubuntu. 
     Without it, `pdftotext` won't parse tables in PDF correctly.
 
-2.  Install `invoice2data` using pip
+2. Install `pdftotext`
+
+    Refer [link](https://pypi.org/project/pdftotext/) to install `pdftotext`
+
+    
+3.  Install `invoice2data` using pip
 
     ```bash
     pip install invoice2data
