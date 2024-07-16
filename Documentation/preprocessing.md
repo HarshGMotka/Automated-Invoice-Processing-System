@@ -1,16 +1,5 @@
 Enhancing an image for better OCR (Optical Character Recognition) results involves several steps to preprocess the image, such as resizing, denoising, binarizing, and applying contrast adjustments.
 
-Sample [Images](../dataset/images/) are available for testing of image quality enhancement.
-
-1. Install the required libraries if you haven't already:
-
-```bash
-pip install opencv-python pillow numpy
-```
-
-2. Use the [code](../preprocessing/preprocessing.py) to enhance the image quality.
-
-
 # Explanation:
 1. **Loading the Image**: The image is loaded in grayscale mode.
 2. **Resizing**: The image is resized to double its original size to make the text more readable.
@@ -23,3 +12,26 @@ pip install opencv-python pillow numpy
 7. **Saving the Enhanced Image**: The final enhanced image is saved to the specified output path.
 
 This preprocessing should significantly improve the OCR results.
+
+# Install and Usage
+
+1. Install the required libraries if you haven't already:
+
+```bash
+pip install opencv-python pillow numpy
+```
+
+2. Set the path to your image
+
+Sample [Images](../dataset/images/) are available for testing of image quality enhancement.
+
+```bash
+# Example usage
+input_image_path = '/path/to/input/image/input_image.jpg'
+output_image_path = '/path/to/output/image/enhanced_image.jpg'
+```
+
+3. Use the [code](../preprocessing/preprocessing.py) to enhance the image quality.
+
+
+
