@@ -21,9 +21,9 @@ This preprocessing should significantly improve the OCR results.
 pip install opencv-python pillow numpy
 ```
 
-2. Set the path to your image
+2. Use the [Python code](../preprocessing/preprocessing.py) to enhance the image quality.
 
-Sample [Images](../dataset/images/) are available for testing of image quality enhancement.
+3. Set the path to your input image in above [code](../preprocessing/preprocessing.py)
 
 ```bash
 # Example usage
@@ -31,7 +31,14 @@ input_image_path = '/path/to/input/image/input_image.jpg'
 output_image_path = '/path/to/output/image/enhanced_image.jpg'
 ```
 
-3. Use the [code](../preprocessing/preprocessing.py) to enhance the image quality.
+4. Run below command to get `Enhanced Image`
+
+```bash
+python3 ./preprocessing/preprocessing.py
+```
+
+Sample [Images](../dataset/images/) are available for testing of image quality enhancement.
+
 
 
 
