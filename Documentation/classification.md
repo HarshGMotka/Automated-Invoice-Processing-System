@@ -1,4 +1,11 @@
-# Step 1: Extract text from img invoices and load JSON metadata
+First, you need to install the required libraries if you haven't already:
+
+```bash
+pip3 install pandas scikit-learn pillow pytesseract
+
+```
+
+# Step 1: Extract text from Image invoices and load JSON metadata
 
 ```bash
 import pandas as pd
