@@ -16,7 +16,7 @@ With the flexible template system you can:
 - have multiple regex per field (if layout or wording changes)
 - define currency
 
-![screenshot](../documentation/invoice2data.png)
+![screenshot](../Documentation/invoice2data.png)
 
 Get data from invoice PDF files to JSON format as shown below:
 
