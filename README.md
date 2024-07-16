@@ -15,8 +15,8 @@ Developing an Automated Invoice Processing System involves several key component
 2.	**[Preprocessing](Documentation/preprocessing.md)**: Enhance image quality for better OCR results.
 3.	**OCR**: Convert images/pdf to machine-readable text.
 4.	**[Data Extraction](Documentation/data_extraction.md)**: Extract relevant fields from the text.
-5.	**Classification and Categorization**: Sort invoices by vendor.
-6.	**Storage**: Save extracted data in a structured format (database).
+5.	**[Classification and Categorization](Documentation/classification.md)**: Sort invoices by vendor.
+6.	**[Storage](Documentation/storage.md)**: Save extracted data in a structured format (database).
 7.	**Output**: Provide an interface to view and manage invoices (optional).
 
 # Detailed Steps
