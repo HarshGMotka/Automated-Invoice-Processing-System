@@ -49,6 +49,17 @@ Get data from invoice PDF files to JSON format as shown below:
     pip install invoice2data
     ```
 
+4. Install `ImageMagick`
+
+    ```bash
+    sudo apt-get install imagemagick
+    ```
+
+    **Check ImageMagick Policy:**
+    - Open the policy.xml file located in /etc/ImageMagick-6/ or /etc/ImageMagick/.
+    - Find the line that contains <policy domain="coder" rights="none" pattern="PDF" /> and change it to <policy domain="coder" - rights="read|write" pattern="PDF" />.
+    - Save the file.
+
 ### Required modules
 
 An [tesseract](https://github.com/tesseract-ocr/tessdoc/blob/main/FAQ.md#how-do-i-get-tesseract) wrapper is included in auto language mode. It will test your input files against the languages installed on your system. To use it tesseract and imagemagick needs to be installed.
