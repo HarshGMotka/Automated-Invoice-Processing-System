@@ -5,12 +5,19 @@ The project aims to classify invoices with multiple types or formats using machi
 First, you need to install the required libraries if you haven't already:
 
 ```bash
-pip3 install pandas scikit-learn pillow pytesseract
+pip install pandas scikit-learn pillow pytesseract
 
 ```
 # Usage
 
 ## Step 1: Extract text from Image invoices and load JSON metadata
+
+Set the path to your input Images and JSON folder
+
+```bash
+img_dir = '/path/to/image/folder'
+json_dir = '/path/to/json/folder'
+```
 
 ```bash
 import pandas as pd
@@ -148,6 +155,14 @@ print(classification_report(y_test, y_pred))
 ```
 
 ## Step 5: Make predictions on new data using Image
+
+Set the path to your new Image and JSON file
+
+```bash
+# Path to the new invoice Image and JSON metadata
+new_img_path = '/path/to/new/image.jpg'
+new_json_path = '/path/to/new/json.json'
+```
 
 ```bash
 # Function to preprocess new invoice data
