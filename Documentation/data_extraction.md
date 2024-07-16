@@ -16,6 +16,8 @@ With the flexible template system you can:
 - have multiple regex per field (if layout or wording changes)
 - define currency
 
+![alt text](../documentation/invoice2data.png)
+
 Get data from invoice PDF files to JSON format as shown below:
 
     {'date': (2014, 5, 7), 'invoice_number': '30064443', 'amount': 34.73, 'desc': 'Invoice 30064443 from QualityHosting', 'lines': [{'price': 42.0, 'desc': u'Small Business StandardExchange 2010\nGrundgeb\xfchr pro Einheit\nDienst: OUDJQ_office\n01.05.14-31.05.14\n', 'pos': u'7', 'qty': 1.0}]}
@@ -57,6 +59,8 @@ apt-get install tesseract-ocr-chi-sim  # Example: Install Chinese Simplified lan
 ```
 
 ## Usage
+
+You can use sample [pdf](../dataset/pdf/) already available for Data Extraction.
 
 Choose any of the following:
 

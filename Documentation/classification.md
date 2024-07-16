@@ -1,11 +1,16 @@
+The project aims to classify invoices with multiple types or formats using machine learning models. The classification models used include SVM, Random Forest, and neural networks, implemented using Scikit-learn.
+
+# Installation
+
 First, you need to install the required libraries if you haven't already:
 
 ```bash
 pip3 install pandas scikit-learn pillow pytesseract
 
 ```
+# Usage
 
-# Step 1: Extract text from Image invoices and load JSON metadata
+## Step 1: Extract text from Image invoices and load JSON metadata
 
 ```bash
 import pandas as pd
@@ -66,7 +71,7 @@ df = pd.DataFrame(data)
 
 ```
  
-# Step 2: Preprocess the data
+## Step 2: Preprocess the data
 
 ```bash
 from sklearn.model_selection import train_test_split
@@ -112,7 +117,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ```
 
-# Step 3: Train a classifier
+## Step 3: Train a classifier
 
 ```bash
 from sklearn.ensemble import RandomForestClassifier
@@ -125,7 +130,7 @@ clf.fit(X_train, y_train)
 
 ```
 
-# Step 4: Evaluate the classifier
+## Step 4: Evaluate the classifier
 
 ```bash
 from sklearn.metrics import accuracy_score, classification_report
@@ -142,7 +147,7 @@ print(classification_report(y_test, y_pred))
 
 ```
 
-# Step 5: Make predictions on new data using Image
+## Step 5: Make predictions on new data using Image
 
 ```bash
 # Function to preprocess new invoice data
